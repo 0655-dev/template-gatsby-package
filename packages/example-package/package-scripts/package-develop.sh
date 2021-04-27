@@ -28,13 +28,13 @@ if [ -z "$PACKAGE_SCRIPTS" ]; then echo "[ERROR] PACKAGE_SCRIPTS var is not set"
 
 GATSBY_OUTPUT_DIR=$PACKAGE_ROOT/public
 
-echo "[info] starting gatsby build"
-pnpx gatsby build
+echo "[info] starting gatsby dev server"
+pnpx gatsby develop
 
-rm -rf $PACKAGE_DIST
-mv $GATSBY_OUTPUT_DIR $PACKAGE_DIST
+# rm -rf $PACKAGE_DIST
+# mv $GATSBY_OUTPUT_DIR $PACKAGE_DIST
 
-SCRIPT_END=`date +%s`
-SCRIPT_RUNTIME=$((SCRIPT_END-SCRIPT_START))
-echo "[INFO] build for $PACKAGE_NAME finished in ${SCRIPT_RUNTIME}s"
-echo ""
+# SCRIPT_END=`date +%s`
+# SCRIPT_RUNTIME=$((SCRIPT_END-SCRIPT_START))
+# echo "[INFO] build for $PACKAGE_NAME finished in ${SCRIPT_RUNTIME}s"
+# echo ""
