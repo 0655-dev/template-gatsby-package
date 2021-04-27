@@ -1,47 +1,8 @@
 importers:
-  packages/empty-package/dist:
-    devDependencies:
-      '@0655-dev/template-gatsby-package': link:../../template-gatsby-package
-      '@types/jest': 26.0.19
-      '@typescript-eslint/eslint-plugin': 4.1.0_637052761c579cfb817aa4c8f9fcf8e9
-      '@typescript-eslint/parser': 4.1.0_eslint@7.24.0+typescript@4.2.4
-      eslint: 7.24.0
-      gatsby: 3.3.1_507781d099a67956587e23f5ac79078b
-      gatsby-plugin-image: 1.3.1_2f2d597255dc269dd4e4e5238f851a29
-      gatsby-plugin-pnpm: 1.2.6_gatsby@3.3.1
-      gatsby-plugin-react-helmet: 4.3.0_gatsby@3.3.1+react-helmet@6.1.0
-      gatsby-plugin-react-svg: 3.0.0
-      gatsby-plugin-sass: 4.3.0_gatsby@3.3.1+sass@1.32.11
-      gatsby-plugin-sharp: 3.3.1_gatsby@3.3.1
-      gatsby-plugin-typescript: 3.3.0_gatsby@3.3.1
-      gatsby-source-filesystem: 3.3.0_gatsby@3.3.1
-      gatsby-transformer-sharp: 3.3.0_9ab1ca3363c4337d2412f570f9278207
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      react-helmet: 6.1.0_react@17.0.2
-      sass: 1.32.11
-      typescript: 4.2.4
-    specifiers:
-      '@0655-dev/template-gatsby-package': '*'
-      '@types/jest': 26.0.19
-      '@typescript-eslint/eslint-plugin': 4.1.0
-      '@typescript-eslint/parser': 4.1.0
-      eslint: 7.24.0
-      gatsby: ^3.2.1
-      gatsby-plugin-image: ^1.2.0
-      gatsby-plugin-pnpm: ^1.2.5
-      gatsby-plugin-react-helmet: ^4.2.0
-      gatsby-plugin-react-svg: 3.0.0
-      gatsby-plugin-sass: ^4.2.0
-      gatsby-plugin-sharp: ^3.2.0
-      gatsby-plugin-typescript: ^3.2.0
-      gatsby-source-filesystem: ^3.2.0
-      gatsby-transformer-sharp: ^3.2.0
-      react: ^17.0.1
-      react-dom: ^17.0.1
-      react-helmet: ^6.1.0
-      sass: ^1.32.8
-      typescript: 4.2.4
+  .:
+    specifiers: {}
+  packages/empty-package:
+    specifiers: {}
   packages/example-package:
     devDependencies:
       '@0655-dev/template-gatsby-package': link:../template-gatsby-package
@@ -85,6 +46,8 @@ importers:
       react-helmet: ^6.1.0
       sass: ^1.32.8
       typescript: 4.2.4
+  packages/template-gatsby-package:
+    specifiers: {}
 lockfileVersion: 5.2
 packages:
   /@ardatan/aggregate-error/0.0.6:
